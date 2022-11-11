@@ -140,7 +140,8 @@
         .overlay {
             width: 100%;
             height: 100%;
-            position: absolute;
+            /* position: absolute; */
+            position: fixed;
             background: rgba(0, 0, 0, 0.4);
         }
         @keyframes blink {
@@ -209,11 +210,12 @@
     <div id=particles-js></div>
     <div class="overlay"></div>
     <div id=top class=header>
+        
         <div class=vert-text>
             <a href=#> <img src=/img/profile_pic.jpg alt="Profile Picture" class=profile> </a>
             <h1>Hey There!</h1>
             <h1> I'm <span class=element></span></h1>
-            <h2 class="hideIt heading-2">|  Software Developer | Data Scientist | C++ Enthusiast |</h2>
+            <h2 class="hideIt heading-2">|  Software Developer | Data Scientist | Web Developer | Unity Enthusiast |</h2>
             <h3 class="hideIt heading-2">| B.Sc. Computer Science | B.Sc. Biology |</h3>
             <!-- <div class="element"></div> -->
             <div>
@@ -225,11 +227,12 @@
                     
                 </ul>
             </div>
+            <div>
+            </div>
         </div>
+
     </div>
-    <div>
-        <h1>Test</h1>
-    </div>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
     <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js integrity=sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS crossorigin=anonymous></script>
@@ -239,7 +242,7 @@
     <script>
         $(function() {
             $(".element").typed({
-                strings: ["a Software Developer", "a Data Scientist", "a C++ Enthusiast.", "Wyatt Drew"],
+                strings: ["a Software Developer", "a Data Scientist", "a Web Developer", "a Unity Enthusiast.", "Wyatt Drew"],
                 typeSpeed: 30,
                 startDelay: 500,
                 backDelay: 250,
