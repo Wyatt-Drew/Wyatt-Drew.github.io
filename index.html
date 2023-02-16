@@ -204,7 +204,15 @@
 // });
 // var container = document.getElementById('particles-js');
 // var containerRect = container.getBoundingClientRect();
-
+// let ps = document.getElementById("particles-js");
+// document.addEventListener("scroll", function(e) {
+//   // Calculate the new position of the handle
+// //   let handleTop = ps.scrollTop + (sidebar[0].offsetHeight - handle[0].offsetHeight) / 2;
+//   var mouseY = e.clientY + ps.scrollTop;
+//   // Update the top position of the handle
+// //   handle[0].style.top = handleTop + "px";
+// window.pJSDom[0].pJS.interactivity.mouse.pos_y = mouseY;
+// });
 // document.addEventListener('mousemove', function(e) {
 //   var mouseX = e.clientX;
 //   var mouseY = e.clientY - containerRect.top; // Subtract container offset from mouse y-coordinate

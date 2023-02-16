@@ -69,7 +69,7 @@ particlesJS(
       }
     },
     "interactivity": { // Configure interactivity options for the particles
-      "detect_on": "particles-js",
+      "detect_on": "window",
       "events": {
         "onhover": { // Configure the hover behavior of the particles
           "enable": true,
@@ -79,7 +79,7 @@ particlesJS(
           "enable": true,
           "mode": "push"
         },
-        "resize": false
+        "resize": true
       },
       "modes": { // Configure different particle modes for interactivity
         "grab": { // Set the behavior of particles when they are grabbed by the cursor
@@ -97,10 +97,10 @@ particlesJS(
           "opacity": 0.5831706665154744,
           "speed": 3
         },
-        "interact": {
-          "selectors": "#particles-js",
-          "mode": "bounce"
-        },
+        // "interact": {
+        //   "selectors": "#particles-js",
+        //   "mode": "bounce"
+        // },
         "repulse": { // Set the behavior of particles when they
         "distance":200,"duration":0.4},
         "push":{"particles_nb":4},
