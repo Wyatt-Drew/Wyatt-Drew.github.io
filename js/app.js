@@ -69,7 +69,7 @@ particlesJS(
       }
     },
     "interactivity": { // Configure interactivity options for the particles
-      "detect_on": "window",
+      "detect_on": "particles-js",
       "events": {
         "onhover": { // Configure the hover behavior of the particles
           "enable": true,
@@ -86,7 +86,9 @@ particlesJS(
           "distance": 170.0914444003467,
           "line_linked": {
             "opacity": 0.6071794871794872
-          }
+          },
+          "selectors": "#particles-js",
+          "mode": "bounce",
         },
         "bubble": { // Set the behavior of particles when a bubble is created
           "distance": 206.53961105756386,
@@ -95,9 +97,13 @@ particlesJS(
           "opacity": 0.5831706665154744,
           "speed": 3
         },
+        "interact": {
+          "selectors": "#particles-js",
+          "mode": "bounce"
+        },
         "repulse": { // Set the behavior of particles when they
         "distance":200,"duration":0.4},
         "push":{"particles_nb":4},
         "remove":{"particles_nb":2}}},
-        "retina_detect":true}
+        "retina_detect":true},
         );

@@ -73,7 +73,7 @@
 <body>
     <!-- <div id=particles-js></div> -->
     <!-- <div id="particles-js-container" style="position: relative;"> -->
-        <div id="particles-js" style="position: absolute; top: 0; left: 0;"></div>
+    <div id="particles-js" style="position: absolute; top: 0; left: 0;"></div>
       <!-- </div> -->
     <div class="overlay"></div>
     <div id=top class=header>
@@ -92,10 +92,7 @@
                     <li><a href=/resume/resume.pdf target=_blank data-toggle=tooltip title=Resume><i class="icons fa fa-file-code-o fa-3x"></i></a></li>
                     
                 </ul>
-                <div class ="hideIt heading-2">
-                    <br>
-                    <br>
-                    <br>
+                <div class ="hideIt heading-2" style = "position: absolute; bottom: 1vh; left: 0; right: 0; margin: 0 auto;">
                     <p >Scroll Down</p>
                     <i class="fa fa-chevron-down fa-3x"></i>
                 </div>
@@ -103,8 +100,70 @@
         </div>
     </div>
         <!-- main body -->
-        <div class = "belowHeader" style = "height: 500vh;">
-            <p>test</p>
+        <div class = "belowHeader" style = "height: 500vh; color: black">
+<!---------------------- About me  ----------------------------------------------------->
+            <h1 class="title" id="Games">About Me</h1>
+<article>
+    <p>This section is still under construction.</p>
+    <p>Feel free to check it out!</p>
+</article>
+<!---------------------- Unity  ----------------------------------------------------->
+<h1 class="title" id="Games">Unity Projects</h1>
+<article><p>Tap a card to play a game or animation demo.</p></article>
+<div class="card-box">
+    <div class="card">                 
+        <a href="https://wyatt-drew.github.io/Falling-Sand-Simulation/index.html" class="card-image-anchor"><img class="last-image" src="img\fallingSand.PNG">
+            <p>Falling Sand Simulation</p></a></div>    
+    <div class="card">                                
+        <a href="https://wyatt-drew.github.io/Gas-Simulation/index.html" class="card-image-anchor"><img class="last-image" src="img\fire.PNG">
+            <p>Gas Simulation</p></a></div>
+    
+    <div class="card">             
+        <a href="https://wyatt-drew.github.io/T-Pose-Mans-Adventure/index.html" class="card-image-anchor"><img class="last-image" src="img\tpose.PNG">
+            <p>T-Pose Man's Adventure</p></a></div>
+     
+    <div class="card">                 
+        <a href="https://wyatt-drew.github.io/Uniform-Cubic-B-Spline/index.html" class="card-image-anchor"><img class="last-image" src="img\bspline.PNG">
+            <p>Uniform-Cubic-B-Spline</p></a></div>
+
+    <div class="card">                
+        <a href="https://wyatt-drew.github.io/AnimationFromText/index.html" class="card-image-anchor"><img class="last-image" src="img\LoZ.PNG">
+            <p>Animation From Text</p></a></div>
+
+    <div class="card">                 
+        <a href="https://wyatt-drew.github.io/ParticleSystemSimulation/index.html" class="card-image-anchor"><img class="last-image" src="img\particle system.PNG">
+            <p>Particle System Simulation</p></a></div>
+
+</div>
+<!---------------------- Web Design  ----------------------------------------------------->
+<h1 class="title" id="Games">Web Design</h1>
+<!-- <article><p>Tap a card to play a game or animation demo.</p></article> -->
+<div class="card-box">
+    <div class="card">                 
+        <a href="http://www.webdev.cs.uregina.ca/~drew111w/" class="card-image-anchor"><img class="last-image" src="img\215.png">
+            <p>My First Webpage</p></a></div>    
+<div class="card-box">
+    <div class="card">                 
+        <a href="http://www.webdev.cs.uregina.ca/~drew111w/Assignments/Assignment6/main.php" class="card-image-anchor"><img class="last-image" src="img\logo.png">
+            <p>Full Stack Polling Website</p></a></div>   
+</div>
+<!---------------------- Robotics/IoT  ----------------------------------------------------->
+<h1 class="title" id="Games">Robotics/IoT</h1>
+<!-- <article><p>Tap a card to play a game or animation demo.</p></article> -->
+<div class="card-box">
+    <div class="card">                 
+        <a href="" class="card-image-anchor"><img class="last-image" src="img\triforce.png">
+            <p>Ocarina Controlled Smart Home (In progress)</p></a></div>    
+</div>
+<!---------------------- Software Projects  ----------------------------------------------------->
+<h1 class="title" id="Games">Software Projects</h1>
+<!-- <article><p>Tap a card to play a game or animation demo.</p></article> -->
+<div class="card-box">
+    <div class="card">                 
+        <a href="" class="card-image-anchor"><img class="last-image" src="img\placeholder.png">
+            <p>Under Construction</p></a></div>    
+</div>
+<!---------------------- END MAIN ----------------------------------------------------->
         </div>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -130,6 +189,31 @@
                 $('.hideIt').delay(3800).addClass('showIt');
             }
         });
+// below this point is test script
+
+    // // calculate the position of the canvas relative to the viewport
+    // var canvasRect = document.getElementById("particles-js").getBoundingClientRect();
+
+    // // listen for mouse movements on the canvas
+    // document.getElementById("particles-js").addEventListener("mousemove", function(event) {
+    // // adjust the mouse coordinates to account for the canvas position
+    // var mouseX = event.clientX - canvasRect.left;
+    // var mouseY = event.clientY - canvasRect.top;
+
+    // // set the mouse position for interactivity
+    // particlesJS("particles-js").interactivity.mouse.position = { x: mouseX, y: mouseY };
+// });
+// var container = document.getElementById('particles-js');
+// var containerRect = container.getBoundingClientRect();
+
+// document.addEventListener('mousemove', function(e) {
+//   var mouseX = e.clientX;
+//   var mouseY = e.clientY - containerRect.top; // Subtract container offset from mouse y-coordinate
+//   if (mouseX >= containerRect.left && mouseX <= containerRect.right && mouseY >= containerRect.top && mouseY <= containerRect.bottom) {
+//     window.pJSDom[0].particlesJS("particles-js").interactivity.mouse.pos_x = mouseX;
+//     window.pJSDom[0].particlesJS("particles-js").interactivity.mouse.pos_y = mouseY;
+//   }
+// });
     </script>
     <script>
         (function(i, s, o, g, r, a, m) {
