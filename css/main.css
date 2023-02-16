@@ -258,8 +258,8 @@ a > img{
     overflow: hidden;   
 }
 article {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 20px;
     padding-top: 10px;
     padding-left: 15px;
@@ -271,7 +271,8 @@ article {
     border-left: 2px solid blue;
     border-right: 2px solid blue;
     border-radius: 10px;
-    flex-grow: .5;
+    /* flex-grow: .5; */
+    width: 50%;
     text-overflow: ellipsis;
 }
 h1 a:any-link {
