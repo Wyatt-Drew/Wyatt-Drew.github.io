@@ -1,3 +1,20 @@
+/*
+ * This code defines a jQuery plugin for creating typing animations on a webpage.
+ * It uses the Typed.js library and allows the user to specify a number of options,
+ * such as the text to be typed, the typing speed, and whether or not to show a cursor.
+ *
+ * The main functionality is implemented in the Typed function, which takes an element
+ * and an options object as parameters. The options object can contain a number of properties
+ * that customize the behavior of the typing animation.
+ *
+ * The plugin works by creating a sequence of strings to be typed, and then typing each one
+ * in turn using the typewrite function. If the "loop" option is set to true, the animation
+ * will continue to loop through the sequence of strings until stopped.
+ *
+ * The plugin also includes functionality for backspacing over previously typed characters
+ * and for shuffling the order of the strings in the sequence.
+ */
+
 !function($){"use strict";var Typed=function(el,options){ this.el=$(el); this.options=$.extend({},$.fn.typed.defaults,options); this.isInput=this.el.is('input');this.attr=this.options.attr; this.showCursor=this.isInput?false:this.options.showCursor; this.elContent=this.attr?this.el.attr(this.attr):this.el.text() 
 this.contentType=this.options.contentType; this.typeSpeed=this.options.typeSpeed; this.startDelay=this.options.startDelay; this.backSpeed=this.options.backSpeed; this.backDelay=this.options.backDelay; this.stringsElement=this.options.stringsElement; this.strings=this.options.strings; this.strPos=0; this.arrayPos=0;
  this.stopNum=0; this.loop=this.options.loop;this.loopCount=this.options.loopCount;this.curLoop=0; this.stop=false; this.cursorChar=this.options.cursorChar; this.shuffle=this.options.shuffle; this.sequence=[];this.build();};Typed.prototype={constructor:Typed,init:function(){ 

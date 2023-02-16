@@ -6,6 +6,7 @@
     <title>Welcome to Wyatt's Homepage</title>
     <!-- http://www.favicomatic.com/ -->
     <meta name=viewport content=width=device-width>
+    <!-- Apple Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png" />
@@ -19,6 +20,7 @@
     <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="img/icon/favicon-128.png" sizes="128x128" />
+    <!-- Edge appearance  -->
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="img/icon/mstile-144x144.png" />
@@ -26,11 +28,13 @@
     <meta name="msapplication-square150x150logo" content="img/icon/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="img/icon/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="img/icon/mstile-310x310.png" />    
-    <!-- Made inline css -->
-    <!-- <link rel=stylesheet href=css/main.css> -->
+    <!--  css -->
+    <link rel=stylesheet href=css/main.css>
     <link rel=stylesheet href=font-awesome/css/font-awesome.min.css>
     <!-- Latest compiled and minified CSS -->
+    <!-- <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.7.0/css/bootstrap.min.css integrity=sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7 crossorigin=anonymous> -->
     <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css integrity=sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7 crossorigin=anonymous>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href=https://fonts.googleapis.com/css?family=Roboto+Slab rel=stylesheet type=text/css>
     <link href=https://fonts.googleapis.com/css?family=Poiret+One rel=stylesheet type=text/css>
     <!-- Chrome, Firefox OS, Opera and Vivaldi -->
@@ -52,73 +56,6 @@
       gtag('config', 'G-WGXQRNEWTJ');
     </script>
     <style>
-        html body {
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            color: white;
-        }
-
-        .header {
-            display: table;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-
-        }
-
-        .vert-text {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center
-        }
-
-        .vert-text h1 {
-            padding: 0;
-            margin: 0;
-            font-size: 4.5em;
-            font-family: 'Poiret One', cursive
-        }
-
-        .profile {
-            height: 170px;
-            width: auto;
-            border-radius: 50%;
-            margin-top: -60px
-        }
-
-        .icons {
-            padding-left: 5px;
-            color: #fff;
-        }
-        .icons:hover {
-            color: #f44336;
-        }
-
-        .heading {
-            color: white;
-            font-family: 'Roboto Slab', serif;
-            text-shadow: 0 0 .313em #fff, 0 0 .625em #fff
-        }
-
-        .heading-2 {
-            color: #d96459;
-            text-shadow: 0 0 .313em #d96459, 0 0 .625em #d96459
-        }
-
-        .hideIt {
-            opacity: 0
-        }
-
-        .showIt {
-            opacity: 1 !important;
-            -webkit-transition: all .7s ease-in-out;
-            -moz-transition: all .7s ease-in-out;
-            -o-transition: all .7s ease-in-out;
-            -ms-transition: all .7s ease-in-out;
-            transition: all .7s ease-in-out
-        }
-
         #particles-js {
             position: fixed;
             z-index: -20;
@@ -130,87 +67,16 @@
             background-size: cover !important;
             background-position: 50% 50%;
         }
-
-        .typed-cursor {
-            opacity: 1;
-            -webkit-animation: blink .7s infinite;
-            -moz-animation: blink .7s infinite;
-            animation: blink .7s infinite
-        }
-        .overlay {
-            width: 100%;
-            height: 100%;
-            /* position: absolute; */
-            position: fixed;
-            background: rgba(0, 0, 0, 0.4);
-        }
-        @keyframes blink {
-            0% {
-                opacity: 1
-            }
-            50% {
-                opacity: 0
-            }
-            100% {
-                opacity: 1
-            }
-        }
-
-        @-webkit-keyframes blink {
-            0% {
-                opacity: 1
-            }
-            50% {
-                opacity: 0
-            }
-            100% {
-                opacity: 1
-            }
-        }
-
-        @-moz-keyframes blink {
-            0% {
-                opacity: 1
-            }
-            50% {
-                opacity: 0
-            }
-            100% {
-                opacity: 1
-            }
-        }
-
-        @media screen and (max-width:768px) {
-            html,
-            body {
-                height: 100%;
-                width: 100%
-            }
-            .profile {
-                height: 120px
-            }
-            .icons {
-                font-size: 30px;
-                padding-left: 5px
-            }
-            .vert-text h1 {
-                font-size: 2.3em
-            }
-            h2 {
-                font-size: 1.4em
-            }
-            h3 {
-                font-size: 1em
-            }
-        }
     </style>
 </head>
 
 <body>
-    <div id=particles-js></div>
+    <!-- <div id=particles-js></div> -->
+    <!-- <div id="particles-js-container" style="position: relative;"> -->
+        <div id="particles-js" style="position: absolute; top: 0; left: 0;"></div>
+      <!-- </div> -->
     <div class="overlay"></div>
     <div id=top class=header>
-        
         <div class=vert-text>
             <a href=#> <img src=/img/profile_pic.jpg alt="Profile Picture" class=profile> </a>
             <h1>Hey There!</h1>
@@ -226,16 +92,25 @@
                     <li><a href=/resume/resume.pdf target=_blank data-toggle=tooltip title=Resume><i class="icons fa fa-file-code-o fa-3x"></i></a></li>
                     
                 </ul>
-            </div>
-            <div>
+                <div class ="hideIt heading-2">
+                    <br>
+                    <br>
+                    <br>
+                    <p >Scroll Down</p>
+                    <i class="fa fa-chevron-down fa-3x"></i>
+                </div>
             </div>
         </div>
-
     </div>
+        <!-- main body -->
+        <div class = "belowHeader" style = "height: 500vh;">
+            <p>test</p>
+        </div>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
     <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js integrity=sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS crossorigin=anonymous></script>
+    
     <script src=js/particles.min.js></script>
     <script src=js/app.js></script>
     <script src=js/typed.js></script>
