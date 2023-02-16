@@ -71,19 +71,31 @@
 </head>
 
 <body>
-    <!-- <div id=particles-js></div> -->
-    <!-- <div id="particles-js-container" style="position: relative;"> -->
+    <!---------------------- Top Nav Bar  ----------------------------------------------------->
+    <header>
+        <ul id="menu">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <!-- <li>
+                <a href="#education">Education</a>
+            </li> -->
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+        </ul>
+    </header>
+    <!---------------------- particles.js etc  ----------------------------------------------------->
     <div id="particles-js" style="position: absolute; top: 0; left: 0;"></div>
-      <!-- </div> -->
     <div class="overlay"></div>
     <div id=top class=header>
         <div class=vert-text>
             <a href=#> <img src=/img/profile_pic.jpg alt="Profile Picture" class=profile> </a>
             <h1>Hey There!</h1>
             <h1> I'm <span class=element></span></h1>
-            <h2 class="hideIt heading-2">|  Software Developer | Data Scientist | Web Developer | Unity Enthusiast |</h2>
+            <h2 class="hideIt heading-2">|  Software Developer | Web Developer | Unity Enthusiast |</h2>
             <h3 class="hideIt heading-2">| B.Sc. Computer Science | B.Sc. Biology |</h3>
-            <!-- <div class="element"></div> -->
+            <!-- Data Scientist -->
             <div>
                 <ul class=list-inline>
                     <li><a href=https://github.com/Wyatt-Drew/ target=_blank data-toggle=tooltip title=Github><i class="icons fa fa-github fa-3x"></i></a></li>
@@ -92,23 +104,28 @@
                     <li><a href=/resume/resume.pdf target=_blank data-toggle=tooltip title=Resume><i class="icons fa fa-file-code-o fa-3x"></i></a></li>
                     
                 </ul>
+                <a href="#about">
+                    
                 <div class ="hideIt heading-2" style = "position: absolute; bottom: 1vh; left: 0; right: 0; margin: 0 auto;">
                     <p >Scroll Down</p>
                     <i class="fa fa-chevron-down fa-3x"></i>
                 </div>
+            </a>
             </div>
         </div>
     </div>
-        <!-- main body -->
-        <div class = "belowHeader" style = "height: 500vh; color: black">
+<!---------------------- Main Body  ----------------------------------------------------->
+        <div class = "belowHeader" style = "height: 500vh; color: black; scroll-behavior: smooth">
 <!---------------------- About me  ----------------------------------------------------->
-            <h1 class="title" id="Games">About Me</h1>
+            <h1 class="title" id="about">About Me</h1>
 <article>
     <p>This section is still under construction.</p>
     <p>Feel free to check it out!</p>
 </article>
+<!---------------------- Education  ----------------------------------------------------->
+
 <!---------------------- Unity  ----------------------------------------------------->
-<h1 class="title" id="Games">Unity Projects</h1>
+<h1 class="title" id="projects">Unity Projects</h1>
 <article><p>Tap a card to play a game or animation demo.</p></article>
 <div class="card-box">
     <div class="card">                 
@@ -188,6 +205,18 @@
                 $('.hideIt').delay(3800).addClass('showIt');
             }
         });
+        $(function() {
+    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 800);
+            return false;
+        }
+    });
+});
 // below this point is test script
 
     // // calculate the position of the canvas relative to the viewport

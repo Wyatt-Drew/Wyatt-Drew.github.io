@@ -287,3 +287,49 @@ h1 a:any-link:hover {
     padding-right: 6px;
     padding-bottom: 2px;
 }
+/* Header bar */
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:5;
+    -webkit-animation-name:dropHeader;
+    animation-name:dropHeader;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-timing-function:ease;
+    animation-timing-function:ease;
+    -webkit-animation-duration:0.75s;
+    animation-duration:0.75s
+}
+header ul{
+    background:none;
+    text-align:right;
+    padding:10px;
+    margin:0
+}
+header li{
+    font-size:1.2em;
+    display:inline-block
+}
+header a{
+    display:block;color:#f2f2f5;
+    padding:10px
+}
+header a:hover{
+    color:#7a7a7a;
+    text-decoration:none;
+    background:rgba(255,255,255,0);
+    border-radius:4px
+}
+header a:focus{
+    color:#3C3C3C;
+    text-decoration:none
+}
+header.active{
+    display:block
+}
+header.sticky{
+    position:fixed;z-index:999
+}
