@@ -183,6 +183,8 @@ header.sticky{
 
 .belowHeader{
     padding-top: 100vh;
+    color: black; 
+    scroll-behavior: smooth;
 }
 /* div for project info */
 :root {
