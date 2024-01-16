@@ -27,9 +27,9 @@ Interactive Elements: Using typed.js for dynamic text and interactive project ca
 
 Email: Wyatt.J.Drew@gmail.com
 
-GitHub: Wyatt-Drew
+GitHub: [Wyatt-Drew](https://github.com/Wyatt-Drew_)
 
-LinkedIn: Wyatt Drew
+LinkedIn: [Wyatt Drew](https://www.linkedin.com/in/wyatt-drew-493290146/)
 
 
 ### Thank you for visiting my portfolio website!
