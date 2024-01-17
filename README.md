@@ -1,7 +1,9 @@
 # Wyatt's Portfolio Website
 
-Welcome to the GitHub repository for my [personal portfolio website](https://wyatt-drew.github.io/index.html). This site showcases my skills and projects. It's a reflection of my journey and expertise in the world of technology and software development.
+Welcome to the GitHub repository for my personal portfolio website. This site showcases my skills and projects. It's a reflection of my journey and expertise in the world of technology and software development.
 
+## Deployment
+The application is deployed and accessible at https://wyatt-drew.github.io/index.html
 
 ## Technologies Used
 
